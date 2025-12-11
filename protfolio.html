@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pusala Keerthi - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+    body { background: #0d0d0d; color: #e6e6e6; }
+
+    
+    nav { position: fixed; top: 0; width: 100%; padding: 18px 60px; display: flex; justify-content: space-between; align-items: center; background: rgba(0,0,0,0.55); backdrop-filter: blur(12px); z-index: 100; }
+    nav .logo { font-size: 26px; color: #00d9ff; font-weight: 700; letter-spacing: 1px; }
+    nav a { margin-left: 25px; text-decoration: none; color: #eee; transition: .3s; }
+    nav a:hover { color: #00d9ff; }
+
+    
+    .hero { height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 20px; }
+    .hero h1 { font-size: 60px; line-height: 1.2; }
+    .hero span { color: #00d9ff; font-weight: 700; }
+    .hero p { margin-top: 18px; max-width: 600px; line-height: 1.6; font-size: 18px; opacity: 0.9; }
+    .btn { display: inline-block; margin-top: 30px; padding: 12px 28px; border-radius: 30px; background: #00d9ff; color: #000; font-weight: 600; text-decoration: none; transition: .3s; }
+    .btn:hover { background: #0099c7; }
+
+    section { padding: 100px 60px; }
+    .title { font-size: 36px; margin-bottom: 30px; color: #00d9ff; text-align: center; }
+
+    
+    .skills-grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); padding: 20px; }
+    .skill-box { background: #141414; padding: 20px; border-radius: 10px; border: 1px solid #1f1f1f; text-align: center; font-weight: 500; transition: .3s; }
+    .skill-box:hover { border-color: #00d9ff; transform: translateY(-5px); }
+
+    
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+    .project-card { background: #141414; padding: 25px; border-radius: 12px; border: 1px solid #1f1f1f; transition: .3s; }
+    .project-card:hover { border-color: #00d9ff; transform: translateY(-6px); }
+    .project-card h3 { color: #00d9ff; margin-bottom: 10px; }
+
+   
+    .contact p { font-size: 18px; margin: 10px 0; text-align: center; }
+
+    footer { text-align: center; padding: 25px; border-top: 1px solid #1a1a1a; margin-top: 60px; opacity: 0.7; }
+
+    @media (max-width: 768px) {
+      nav { padding: 18px 25px; }
+      section { padding: 80px 25px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Keerthi</div>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <div>
+      <h1>Hello, I'm <span>Pusala Keerthi</span></h1>
+      <h1>Full Stack Developer</h1>
+      <p>I enjoy learning new technologies and building modern applications using Java, Spring Boot, React, Python, and more.</p>
+      <a class="btn" href="#projects">View My Work</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="title">About Me</h2>
+    <p style="max-width: 700px; margin: auto; text-align:center; line-height:1.7;">
+      I'm a passionate Full Stack Developer who loves creating efficient, modern, and user-friendly applications. Always eager to explore new technologies and expand my skills.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2 class="title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-box">Java</div>
+      <div class="skill-box">Spring Boot</div>
+      <div class="skill-box">Python</div>
+      <div class="skill-box">React</div>
+      <div class="skill-box">HTML</div>
+      <div class="skill-box">CSS</div>
+      <div class="skill-box">AWS</div>
+      <div class="skill-box">MySQL</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="title">Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Simple Social Media Platform</h3>
+        <p>Built using Spring Boot. A minimal social media app where users can post and interact.</p>
+      </div>
+      <div class="project-card">
+        <h3>Age Calculator</h3>
+        <p>A JavaScript application that calculates a user's age from DOB.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="title">Contact</h2>
+    <div class="contact">
+      <p>Email: ask2keerthi28@gmail.com</p>
+      <p>GitHub: Add Link</p>
+      <p>LinkedIn: Add Link</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Pusala Keerthi | All Rights Reserved
+  </footer>
+</body>
+</html>
